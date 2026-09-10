@@ -1,0 +1,38 @@
+{
+  "name": "cypress-testing-framework",
+  "version": "1.0.0",
+  "description": "cypress testing framework to do testing e2e",
+  "keywords": [
+    "cypress",
+    "testing",
+    "e2e",
+    "framework"
+  ],
+  "homepage": "https://github.com/Juanalejandro1/cypress-testing-framework#readme",
+  "bugs": {
+    "url": "https://github.com/Juanalejandro1/cypress-testing-framework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanalejandro1/cypress-testing-framework.git"
+  },
+  "license": "ISC",
+  "author": "juan alejandro medina gordillo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.4.1",
+    "cypress": "^16.0.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.9.1",
+    "eslint-plugin-cypress": "^7.0.1",
+    "globals": "^17.12.0"
+  }
+}
