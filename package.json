@@ -23,6 +23,7 @@
   "scripts": {
     "test": "test",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run --headless",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

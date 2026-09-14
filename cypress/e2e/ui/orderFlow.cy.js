@@ -1,5 +1,5 @@
 describe('test login', () => {
-  it('should login successfully if the credentials are valid', () => {
+  it('should login successfully if the credentials are valid, and proceed with the order flow', () => {
     cy.visit('/', { failOnStatusCode: false });
 
     cy.url().should('include', Cypress.config().baseUrl);
@@ -41,7 +41,6 @@ describe('test login', () => {
       //CATEGORY AND FOOD SELECTION
       cy.get('div[dir=auto]').contains(/^ALMUERZOS$/).should('be.visible').click();
       cy.get('div[dir=auto]').contains(/^Casado con pollo$/).should('be.visible').click();
-      cy.contains('Casado con pollo').parents().find('').first().click();
       cy.get('div[dir=auto]').contains(/^ABC Combo$/).should('be.visible').click();
       cy.get('div[dir=auto]').contains('Aros de cebolla').should('be.visible').click();
       cy.contains('Aros de cebolla').parents().find('div[style*="255, 25, 67"]').first().click();
